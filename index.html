@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  </head>
+<body>
+
+       
+<!---------------------------nav Bar ------------------------------------->
+  
+<section class="navbar">
+  <div class="portfolio-title">My Portfolio</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="menu">
+    <a href="#home" onclick="setActive(this)">Home</a>
+    <a href="#about" onclick="setActive(this)">About</a>
+    <a href="#projects" onclick="setActive(this)">Projects</a>
+    <a href="#skills" onclick="setActive(this)">Skills</a>
+    <a href="#contact" onclick="setActive(this)">Contact</a>
+  </div>
+</section>
+
+<script>
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+
+
+function setActive(link) {
+    const links = document.querySelectorAll('.menu a');
+    links.forEach((item) => {
+        item.classList.remove('active'); // Remove active class from all links
+    });
+    link.classList.add('active'); // Add active class to the clicked link
+}
+
+
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        const menu = document.querySelector('.menu');
+        menu.classList.remove('active'); // Close the menu
+    });
+});
+
+</script>
+<!-------------------------------HERo SECTION ------------------------------------->
+
+<section class="herosection container-fluid" id="home">
+
+<!-- Left-side text content -->
+
+
+<div class="text-content" >
+  <h5>Hi, I am</h5>
+
+  <h1 class="animated-name">
+    <span>M</span><span>O</span><span>H</span><span>A</span><span>N</span>
+    <span>M</span><span>A</span><span>R</span><span>R</span><span>I</span>
+  </h1>
+
+  <p>UI/UX Designer</p>
+  <a href="#projects" class="button">View My Work</a>
+  <a href="images/My Resume.pdf" download="MY Resume" class="button">Download Resume</a>
+</div>
+
+
+
+<!-- Right-side profile image -->
+
+
+
+<div class="profile-card">
+  <!-- Initial Background Image -->
+  <div class="background-image"> <img src="images/dimple03.jpg" alt=""></div>
+  
+  <!-- Profile Details that appear on hover -->
+  <div class="details">
+    <div class="profile-image">
+      <img src="images/dimple03.jpg" alt="Profile Image">
+    </div>
+    <h2 class="name">Mohan Marri</h2>
+    <p class="role">UI/UX Designer</p>
+    <p class="description">Passionate about creating user-friendly and visually appealing designs.</p>
+  </div>
+</div>
+
+</section>
+
+
+<!------------------------------------------about section-------------------------------->
+
+<section class="aboutsection container-fluid" id="about">
+<div class="about-content">
+    <div class="about-image">
+        <img src="images/port pic03.jpg" alt="About Me">
+    </div>
+    
+    <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! I'm Mohan Marri, a dedicated and passionate UI/UX designer, freshly trained at Tech Mahindra Smart Academy. My journey into design began with a fascination for how technology can be used to enhance user experiences, which led me to pursue formal training. Throughout my education, I gained a strong foundation in design principles and developed practical skills in wireframing, prototyping, and user research.</p>
+        
+        <p>I am committed to continuous learning and staying updated with the latest trends and tools in UI/UX design. I'm eager to join a dynamic team where I can collaborate, grow, and make meaningful contributions. Let's connect and explore how we can create exceptional user experiences together!</p>
+        
+        <p>Let's connect and create something amazing together!</p>
+        
+      
+
+        
+  
+      <a href="#Contact" class="no-underline"> <button class="cssbuttons-io-button">
+Get In Touch
+<div class="icon">
+<svg
+  height="24"
+  width="24"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M0 0h24v24H0z" fill="none"></path>
+  <path
+    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+    fill="currentColor"
+  ></path>
+</svg>
+</div>
+</button> </a> 
+
+    </div>
+</div>
+</section>
+
+
+
+<!-----------------------------------   Projects section ------------------------------------------------------------------>
+
+
+<section class="project-section" id="projects">
+
+
+  <h2 class="section-title">
+    <span class="section-title-text">Development Projects</span>
+  </h2>
+
+  
+
+  <div class="developmentprojects">
+    <!-- Project Card 1 -->
+    <div class="card01">
+      <div class="top-card01"></div>
+      <div class="bottom-card01">
+        <div class="card-content01">
+          <span class="card-title01">Project 1</span>
+          <p class="card-txt01">HTML ,CSS & Bootstrap</p>
+          <div class="card-buttons01">
+            <a href="https://mohan19999.github.io/mohan01/" target="_blank"  class="card-btn01">Preview</a>
+            <a href="https://github.com/mohan19999/mohan01.git"  target="_blank" class="card-btn01">Sourceview</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+     <!-- Project Card 2 -->
+     <div class="card02">
+      <div class="top-card02"></div>
+      <div class="bottom-card02">
+        <div class="card-content02">
+          <span class="card-title02">Project 2</span>
+          <p class="card-txt02">Description of project 1</p>
+          <div class="card-buttons02">
+            <a href="https://mohan19999.github.io/javascriptworks/" target="_blank" class="card-btn02">Preview</a>
+            <a href="https://github.com/mohan19999/javascriptworks.git" target="_blank" class="card-btn02">Sourceview</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Project Card 3 -->
+     <div class="card03">
+      <div class="top-card03"></div>
+      <div class="bottom-card03">
+        <div class="card-content03">
+          <span class="card-title03">Project 3</span>
+          <p class="card-txt03">Description of project 1</p>
+          <div class="card-buttons03">
+            <a href="https://mohan19999.github.io/React-Project/" target="_blank" class="card-btn03">Preview</a>
+            <a href="https://github.com/mohan19999/React-Project.git" class="card-btn03">Sourceview</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Project Card 4 -->
+
+     <div class="card04">
+      <div class="top-card04"></div>
+      <div class="bottom-card04">
+        <div class="card-content04">
+          <span class="card-title04">Project 3</span>
+          <p class="card-txt04">Description of project 1</p>
+          <div class="card-buttons04">
+            <a href="https://dev-mohan1999.pantheonsite.io/" target="_blank" class="card-btn04">Preview</a>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!------------------------------------  Designing projects  ------------------------------------------------->
+
+  <h2 class="section-title01">
+    <span class="section-title-text01">Design Projects</span>
+  </h2>
+
+  <div class="Designprojects">
+
+    <!------------------- card 01 ------------------->
+
+         <div class="designcard-container01 mt-5">
+                  <div class="card-design01">
+                       <img src="images/food poster.jpg" alt="Project Image">
+          <div class="hover-content01">
+              <span> TACOS </span>
+              <div class="buttons-design01">
+                  <a href="images/Design images/food poster.jpg" target="_blank"><button class="preview-btn-design01">Preview</button></a>
+                  
+              </div>
+          </div>
+                  </div>
+      <div class="project-title-design01"> Food Poster </div>
+         </div>
+
+
+       <!------------------- card 02 ------------------->
+
+       <div class="designcard-container02 mt-5">
+        <div class="card-design02">
+             <img src="images/baking.jpg" alt="Project Image">
+<div class="hover-content02">
+    <span> BAKING </span>
+    <div class="buttons-design02">
+
+        <a href="images/Design images/baking.jpg" target="_blank"> <button class="preview-btn-design02">Preview</button> </a>
+        
+    </div>
+</div>
+        </div>
+<div class="project-title-design02"> Baking Poster </div>
+</div>
+
+
+ 
+ <!------------------- card 03 ------------------->
+
+ <div class="designcard-container03 mt-5">
+  <div class="card-design03">
+       <img src="images/orange juice.jpg" alt="Project Image">
+<div class="hover-content03">
+<span> ORANGE JUICE </span>
+<div class="buttons-design03">
+
+  <a href="images/Design images/orange juice.jpg" target="_blank"> <button class="preview-btn-design03">Preview</button> </a>
+  
+</div>
+</div>
+  </div>
+<div class="project-title-design03"> Juice Poster </div>
+</div>
+
+
+<!------------------- card 04 ------------------->
+
+<div class="designcard-container04 mt-5">
+  <div class="card-design04">
+       <img src="images/kitchen poster.jpg" alt="Project Image">
+<div class="hover-content04">
+<span> kITCHEN CLEANING </span>
+<div class="buttons-design04">
+
+  <a href="images/Design images/kitchen poster.jpg" target="_blank"> <button class="preview-btn-design04">Preview</button> </a>
+  
+</div>
+</div>
+  </div>
+<div class="project-title-design04"> Kitchen Poster </div>
+</div>
+</div>
+
+
+ 
+<!----------------------------Figma projects --------------------------------->
+
+<h2 class="figma-title01">
+  <span class="figma-title-text01">Figma Projects</span>
+</h2>
+
+<div class="figmaprojects">
+
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/ticket-booking.png" alt="Front Image" style="width:100%; height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <a href="https://www.figma.com/proto/BhD8trX2FBScCv1JvVCnmi/MOVIE-TICKETS-BOOKING?node-id=0-1&t=sWKYFgTs5cXCjk0l-1" target="_blank"><button class="figma-button">Preview</button> </a>
+      </div>
+    </div>
+
+    <div class="figma-title">Movie Ticket<br> Booking App</div>
+  </div>
+
+<!------------------------card 02 ------------------->
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/shoping app.png" alt="Front Image" style="width:100%; height:210px;">
+      </div>
+      <div class="flip-card-back">
+        <a href="https://www.figma.com/proto/xOHeNkrkjjaiiWsl42s394/mobile-App?node-id=114-457&t=sWKYFgTs5cXCjk0l-1" target="_blank"><button class="figma-button">Preview</button> </a>
+      </div>
+    </div>
+
+    <div class="figma-title">Shopping App</div>
+  </div>
+
+
+
+<!------------------------card 03 ------------------->
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/web application.png" alt="Front Image" style="width:100%; height:150px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="https://www.figma.com/proto/PfW2ytqk2L17VzKEQYzCZF/Myntra-Web-Aplication?node-id=0-1&t=2Z6hnwlrcX1py0vv-1" target="_blank"><button class="figma-button">Preview</button> </a>
+    </div>
+  </div>
+
+  <div class="figma-title">Web Application</div>
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+<!----------------------------------- Skills section  ------------------------------------------------------------------>
+
+<section class="skillssection container-fluid" id="skills">
+
+  <h2 class="skill-title">
+    <span class="skill-title-text">Welcome To The <br>Skills Section </span>
+  </h2>
+
+
+  <div class="skill-card mt-5">
+    <div class="card">
+      <span class="default-text">Design Skills</span>
+      <span class="hover-text">
+        <strong>Designing Skills</strong>
+        <ul>
+                     <li>UI Design</li>
+                     <li>UX Design</li>
+                     <li>Wireframing</li>
+                     <li>Prototyping</li>
+                     <li>Figma</li>
+                     <li>Adobe XD</li>
+                     <li>Sketch</li>
+                     <li>Typography</li>
+                     <li>Color Theory</li>
+                     <li>Design Systems</li>
+                     <li>Usability Testing</li>
+                     <li>Interaction Design</li>
+        </ul>
+      </span>
+    </div>
+    
+    <div class="card">
+      <span class="default-text">Development Skills</span>
+      <span class="hover-text">
+        <strong>Development Skills</strong>
+        <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>WordPress</li>
+                                    <li>Git/GitHub</li>
+                                    <li>Responsive Design</li>
+                                    <li>Animations & Transitions</li>
+                                    <li>Performance Optimization</li>
+        </ul>
+      </span>
+    </div>
+    
+    <div class="card">
+      <span class="default-text">Soft Skills</span>
+      <span class="hover-text">
+        <strong>Soft Skills</strong>
+        <ul>                             
+                                    <li>Creativity</li>
+                                    <li>Adaptability</li>
+                                    <li>Communication</li>
+                                    <li>Problem-Solving</li>
+                                    <li>Time Management</li>
+                                    <li>Critical Thinking</li>
+                                    <li>Attention to Detail</li>
+                                    
+        </ul>
+      </span>
+    </div>
+  </div>
+  
+  
+  
+
+</section>
+
+
+<!------------------------------------- contact section ----------------------------------------->
+
+<section class="contact-section container-fluid" id="Contact">
+  <h2 class="contact-title">
+    <span class="contact-title-text">Get In Touch</span>
+  </h2>
+
+  <div class="contact-container">
+    <!-- Left Side: Contact Details -->
+    <div class="contact-details">
+      <h3>Contact Details</h3>
+      <p><strong>Name:</strong> Mohan Marri</p>
+      <p><strong>Mobile:</strong> +91 8074871012</p>
+      <p><strong>Email:</strong> mohanmarri1999@gmail.com</p>
+      <p><strong>Location:</strong> Visakhapatnam, India</p>
+
+
+<!-------------------------Social icons ----------------------------------------->
+
+
+      <div class="social-card">
+
+        <a href="https://www.instagram.com/mohan_dimple_mi/" class="social-link">
+          <img src="images/instagram.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="http://linkedin.com/in/mohan-marri-661346155" class="social-link">
+           <img src="images/Linkedin.png" alt="LinkedIn" class="social-icon" style="width: 55px;">
+        </a>
+        <a href="https://wa.me/+918074871012" target="_blank" class="social-link">
+          <img src="images/whtasp.png" alt="WhatsApp" class="social-icon" style="width: 55px;">
+        </a>
+        <a href="mailto:mohanmarri1999@gmail.com" target="_blank" class="social-link">
+          <img src="images/Gmail.png" alt="Gmail" class="social-icon">
+        </a>
+
+      </div>
+
+    
+
+      </div>
+
+
+  <!------------------------------------- Right Side: Contact Form ----------------------------------------->
+
+    <div class="contact-form">
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!---------------------------Footer ----------------------------------->
+  <footer>
+    <p>&copy; 2024 [MOHAN MARRI]. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>
